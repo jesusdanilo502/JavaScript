@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function mostrar() {
+            var nom = document.getElementById('nombre').value;
+            var edad = document.getElementById('edad').value;
+            alert('ingreso nombre:' + nom);
+            alert('ingreso edad: ' + edad);
+
+        }
+    </script>
+    <form action="">
+        <p>Ingrese su nombre:</p>
+        <input type="text" class="" id="nombre"><br>
+        <p>Ingrese edad:</p>
+        <input type="text" id="edad" class="text"><br>
+        <input type="button" value="confirmar" onclick="mostrar()">
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ejercicio </title>
+
+    <script type="text/javascript">
+        /* function cargar(sueldos) {
+                                                    var f;
+                                                    for (f = 0; f < sueldos.length; f++) {
+                                                        var v;
+                                                        v = prompt('Ingrese sueldo:', '');
+                                                        sueldos[f] = parseInt(v);
+                                                    }
+                                                }
+
+                                                function calculardatos(dos) {
+                                                    var total = 0;
+                                                    var f;
+                                                    for (f = 0; f < dos.length; f++) {
+                                                        total = total + dos[f];
+                                                    }
+                                                    document.write('listado de sueldo <br>');
+                                                    for (f = 0; f < dos.length; f++) {
+                                                        document.write(dos[f] + '<br>');
+                                                    }
+                                                    document.write('total de gastos en sueldos es:' + total);
+                                                }
+
+
+                                                var sueldos;
+                                                sueldos = new Array(5);
+                                                cargar(sueldos);
+                                                calculardatos(sueldos);*/
+        function mostrarfecha(m, d) {
+            var num;
+            num = prompt('ingrese mes', '');
+            num = parseInt(num);
+            document.write('corresponde a mes:' + m[num - 1]);
+            document.write('<br>');
+            document.write('tiene' + d[num - 1] + 'dias');
+        }
+
+        var meses;
+        meses = new Array(12);
+        meses[0] = 'Enero';
+        meses[1] = 'febrero';
+        meses[2] = 'Marzo';
+        meses[3] = 'Abril';
+        meses[4] = 'Mayo';
+        meses[5] = 'Junio';
+        meses[6] = 'Julio';
+        meses[7] = 'Agosto';
+        meses[8] = 'Septiembre';
+        meses[9] = 'Octubre';
+        meses[10] = 'Noviembre';
+        meses[11] = 'Diciembre';
+
+        var dias;
+        dias = new Array(12);
+        dias[0] = 31;
+        dias[1] = 28;
+        dias[2] = 31;
+        dias[3] = 30;
+        dias[4] = 31;
+        dias[5] = 30;
+        dias[6] = 31;
+        dias[7] = 31;
+        dias[8] = 30;
+        dias[9] = 31;
+        dias[10] = 30;
+        dias[11] = 31;
+
+        mostrarfecha(meses, dias);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
